@@ -1,0 +1,215 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+}
+body {
+    background-color:#cad1c3;
+    color: #e7eed0;
+}
+
+.header {
+    /*contenedor*/
+    background-color: #51425f;
+    color: #e7eed0;
+    height: 10vh;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+
+    .navegacion{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin-right: 40px;
+        margin-left: 40px;
+        padding: 1.5rem 0;
+
+        .anclaLogo{
+            text-decoration: none;
+            color: #e7eed0;
+            font-weight: 800;
+            font-size: 1.2rem;
+            
+        }
+        .listaNavegacion{
+            list-style-type: none;
+            display: flex;
+            align-items: center;
+
+            .listaItem{
+                margin-right: 20px;
+
+                .linkNavegacion{
+                    color: #e7eed0;
+                    text-decoration: none;
+                    font-weight: 700;
+                    font-size: 1rem;
+                    padding: 0.5rem 1rem;
+
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover{
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px #2e1437;
+                        border-radius: 5px;
+                    }
+ 
+                }
+
+                /*iniciar sesion*/
+                .linkNavegacion.iniciarSesion{
+                    background-color: #2e1437;
+                    color: #e7eed0;
+                    border-radius: 5px;
+
+                    transition: transform 0.3s, box-shadow 0.3s;
+                    &:hover{
+                        background-color: #51425f;
+                        transform: scale(0.95);
+                        box-shadow: 0 0 10px #2e1437;
+                    }
+                }
+
+                
+            }
+
+        }
+
+    }
+
+
+}
+/*estilos mobile y tablet*/
+@media(max-width: 768px){
+
+    .header{
+        height: initial;
+
+        .navegacion{
+            margin-left: 10px;
+            margin-right: 10px;
+            flex-direction: column;
+            row-gap: 20px;
+        }
+        .anclaLogo{
+            font-weight: 700;
+            font-size: 1.2rem;
+        }
+        .listaNavegacion{
+            padding: initial;
+
+            .listaItem{
+                .linkNavegacion{
+                    font-weight: 400;
+                    margin-right: initial;
+                    font-size: 1rem;
+                    padding: 0.2rem;
+
+                }
+            }
+        }
+    }
+
+}
+
+/*seccion principal*/
+.main{
+    .seccionPrincipal{
+        color: #e7eed0;
+        background:linear-gradient(to right top, #0000008a, #0000008a), url(../MaquetadoTrabajo/imagenesProyecto/egipto.jpg);
+        background-size: cover;
+        background-position: center;
+        height: 90vh;
+        display: flex;
+        flex-direction: column;
+        justify-content:center;
+        align-items: center;
+        text-align: center;
+
+        .tituloPrincipal{
+            font-size: 4rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+
+        }
+        .subtituloPrincipal{
+            font-size: 2.2rem;
+            font-weight: 400;
+            margin-bottom: 1rem;
+        }
+        .botonContactarnos{
+            background-color: #51425f; 
+            color: #e7eed0;
+            padding: 1rem 2rem;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: 700;
+            text-decoration: none;
+
+            transition: transform 0.3s, box-shadow 0.3s;
+            &:hover{
+                transform: scale(0.95);
+                box-shadow: 0 0 10px #2e1437;
+
+            }
+        }
+
+    }
+    .buscadorPrinc{
+        background-color:#cad1c3;
+        color: #51425f;
+        height: 50vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .tituloSection{
+            font-size: 2.2rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+        }
+        .buscadorDestinos{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+            margin-top: 1rem;
+
+            .inputBuscador{
+                background-color:white;
+                height: 50px;
+                width: 450px;
+                margin: 20px 10px;
+                padding: 0px 20px;
+                font-size: 1.2rem;
+                border: 2px solid white;
+                border-radius: 25px;
+                outline: none;
+
+            }
+            .botonBuscador{
+                background-color: #51425f;
+                color: #e7eed0;
+                display: inline-block;
+                height: 50px;
+                margin: 25px 12px;
+                padding: 0 20px;
+                border-radius: 25px;
+                font-size: 1.2rem;
+                font-weight: 700;
+                border: 1px solid #51425f;
+                text-align: center;
+
+                transition: transform 0.3s, box-shadow 0.3s;
+                &:hover{
+                    transform: scale(0.95);
+                    box-shadow: 0 0 10px #2e1437;
+                }
+                
+            }
+
+        }
+        
+    }
+}
