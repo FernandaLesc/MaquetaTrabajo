@@ -1,0 +1,96 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Helvetica, sans-serif;
+    
+    
+}
+body {
+    background-color:indigo;
+    color: whitesmoke;
+    border-radius: 15px;
+    padding: 40px 20px;
+    height: 90vh;
+    font-size:1.2rem;
+    
+
+
+}
+
+h1 {
+    color: #2e1437;
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    
+    
+}
+
+.main{
+    color: #2e1437;
+    height: 40px;
+    padding: 0px 20px;
+    margin-left: 10px;
+    border-radius: 15px;
+    margin: 0 auto;
+    
+    
+}
+
+.form {
+    background-color:#cad1c3;
+    width: 30%;
+    margin:0 auto;
+    border-radius: 5px;
+    padding: 40px 20px;
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items:normal;
+    height: 90vh;
+    font-size:1.2rem;
+    
+
+
+}
+.prov{
+    background-color: #2e1437;
+    width: 5%;
+    margin-bottom: 20px;
+    margin-top: 20px;
+
+
+}
+.camposForm {
+    width: 90%;
+    background: #333333;
+    height: 40px;
+    padding: 0px 20px;
+    margin-left: 5px;
+    border-radius: 15px;
+    margin-bottom: 16px;
+    border: 1px solid #2e1437;
+    color:rgb(255, 255, 255);
+    
+    font-size: 14px;
+
+}
+
+
+
+.BotonVolver{
+    display: inline-block;
+    background-color:  #2e1437;
+    height: 30px;
+    margin-top: 40px;
+    color:rgb(255, 255, 255);
+    border: 1px solid #2e1437;
+    text-align: center;
+    justify-content: center;
+    border-radius: 25px;
+    font-size: 1rem;
+    font-weight: 400;
+    text-decoration: none;
+    
+}
