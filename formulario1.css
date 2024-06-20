@@ -6,19 +6,24 @@
 }
 
 body{
+    background-image:url(imagenesProyecto/fondo\ formulario.jpg);
+    background-size: cover;
     background-color: #cad1c3;
     color:#2e1437; 
+    
      /* scrollbar-color: #9f3647  #181419; /*nuevo
      scrollbar-width: thin;*/
     /*cad1c3  2e1437*/ 
 
 }
-.bodyRegistrarse{
+.bodyDatos{
     height: 100vh;
-    background:linear-gradient(to right top, #51425f,#51425f);
+    background-image:url(imagenesProyecto/fondo\ formulario.jpg);
+    /*background:linear-gradient(to right top, #51425f,#51425f);*/
     background-size: cover;
     background-position: center;
-    .headerRegistrarse{
+
+    .headerDatos{
         color:#cad1c3;
         height: 8vh;
         padding:30px;
@@ -35,8 +40,8 @@ body{
         }
     }
     .main{
-         /*seccion de registrarse.html*/
-        .seccionRegistrarse{
+         
+        .seccionDatos{
             background-color:#cad1c3;
             width: 40%;
             margin:0 auto;
@@ -48,19 +53,19 @@ body{
             align-items: center;
             height: 80vh;
             font-size:1.2rem;
-            .tituloRegistrarse{
+            .tituloDatos{
                 font-size: 2.5rem;
                 font-weight: 700;
                 margin-top: 25px;
                 margin-bottom: 30px;
             }
-            /*seleccionar todos los input menos el checkbox*/
+            
             form{
                 width: 100%;
                 padding:40px;
-                input:not(.check,.boton),select{
+                input:not(.botonVolver),select{
                     width: 100%;
-                    margin-bottom: 10px;
+                    margin-bottom: 15px;
                     height: 40px;
                     padding: 0px 20px;
                     font-size: 1rem;
@@ -69,28 +74,9 @@ body{
                     background-color: #333333;
                     outline: none;
                     color:rgb(255, 255, 255);
-                }
-                .error input:not(.check,.boton),.error select{
-                    border: 2px solid #2e1437;
-                }
-                .error-text{
-                    color: #2e1437;
-                    font-size: 0.9rem;
-                    margin-left: 10px;
-                    margin-top:0px;
-                    margin-bottom: 10px;
-                }
-              
-                .terminos{
-                    font-size: 0.9rem;
-                    display: flex;
-                    align-items: center;
-                    margin-bottom: 20px;
-                    .textoCheck{
-                        margin-left: 10px;
-                    }
-                }
-                .boton{
+                
+                }    
+                .botonVolver{
                     width: 90%;
                     box-sizing:content-box;
                     justify-content: center;
@@ -103,29 +89,22 @@ body{
                     border-radius: 25px;
                     font-size: 1rem;
                     font-weight: 400;
+                    margin-bottom: 30px;
                 }
-                .ayuda{
-                    margin-top: 20px;
-                    margin-left: 20px;
-                    font-size: 1rem;
-                    text-decoration: none;
-                    color: #787878;
-                    font-weight:400;
-                    
-                   
-                }
-            }
+            }    
+            
            
         }
    
-    }
+    }    
+
 }
 
 
 
 /*media querys para mobile PAGINA registrarse*/
 @media (max-width: 1200px) {
-    .bodyRegistrarse{
+    .bodyDatos{
         .headerRegistrarse{
             padding:20px;
             .anclaLogo{
@@ -136,7 +115,7 @@ body{
             .seccionRegistrarse{
                 width: 95%;
                 padding: 10px 10px;
-                .tituloRegistrarse{
+                .tituloDatos{
                     font-size: 2rem;
                 }
                form{
@@ -148,25 +127,19 @@ body{
                     height: 35px;
                     font-size: 1rem;
                 }
-                .terminos{
-                    width: 80%;
-                    margin:0 auto;
-                    font-size: 0.7rem;
-                }
-                .boton{
+                
+                .botonVolver{
                     margin-top: 20px;
                     margin-bottom: 20px;
                     width: 70%;
                     padding: 0.8rem 0.8rem;
                     font-size: 0.8rem;
                 }
-                .ayuda{
-                    text-align: left;
-                    font-size: 0.8rem;
                 }
-               }
-               
             }
+               
+               
+            
         }
     }
 

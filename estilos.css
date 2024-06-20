@@ -2,7 +2,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Helvetica, sans-serif;
+    font-family: Helvetica, serif;
 }
 body {
     background-color:#cad1c3;
@@ -14,9 +14,13 @@ body {
     background-color: #51425f;
     color: #e7eed0;
     height: 10vh;
-    position: sticky;
+    overflow: hidden;
+    position: fixed;
+    width: 100%;
     top: 0;
-    z-index: 10;
+    left: 0;
+    z-index: 999px;
+
 
     .navegacion{
         display: flex;
@@ -27,9 +31,11 @@ body {
         padding: 1.5rem 0;
 
         .anclaLogo{
+            display: inline-block;
             text-decoration: none;
             color: #e7eed0;
-            font-weight: 800;
+            font-style:italic;
+            font-weight: 900;
             font-size: 1.2rem;
             
         }

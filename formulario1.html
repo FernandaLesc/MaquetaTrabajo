@@ -3,37 +3,43 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Iniciar Sesión | F&P Viajes</title>
+    <title>Registrarse | F&P Viajes</title>
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css">
-    <link rel="stylesheet" href="estiloSesion.css">
+    <link rel="stylesheet" href="formulario1.css">
     <link rel="icon" type="image/png" href="imagenesProyecto/icon.png">
     <link rel="favicon" type="image/vnd.icon" href="imagenesProyecto/favicon.ico">
     <link rel="shortcut icon" href="imagenesProyecto/favicon.ico" type ="image/x-icon">
 </head>
-<body class="bodyRegistrarse">
-    <header class="headerRegistrarse">
+<body class="bodyDatos">
+    <header class="headerDatos">
         <a class="anclaLogo" href="index.html">
             <span><img src="imagenesProyecto/iconChico.png">F&P Viajes</span>
         </a>
     </header>
     <main id="main" class="main">
-        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionRegistrarse">
-            <!--pongo get ya que en github pages da error el method post-->
+        <section data-aos="zoom-in" data-aos-duration="1000" class="seccionDatos">
+            
             <form action="" method="get">
-                <h2 class="tituloRegistrarse">Iniciar Sesión</h2>
+                <h2 class="tituloDatos">Completa tus datos</h2>
                 <div>
-                    <input type="text" placeholder="Email" id="email" name="email">
-                    <div class="error-text"></div>
+                    <input type="text" placeholder="Nombre" id="Nombre" name="Nombre">
+                </div>
+                <div>
+                    <input type="text" placeholder="Apellido" id="Apellido" name="Apellido">
+                </div>
+                <div>
+                    <input type="text" placeholder="Email" id="email" name="Email">
+                    
                 </div>
                 <div>
                     <input type="password" placeholder="Contraseña" id="password" name="password">
-                    <div class="error-text"></div>
+                    
                 </div>
                 <div>
-                    <input class="boton" type="submit" value="Iniciar Sesión">
+                    <h6 for=""> <a href="#">Terminos y Condiciones</a></label> 
                 </div>
                 <div>
-                    <a id="ayuda" class="ayuda" href="formulario1.html">Registrarse</a>
+                    <br><input class="botonVolver" type="submit" value="Registrarme">
                 </div>
             </form>
         </section>
@@ -42,6 +48,5 @@
     <script>
         AOS.init();
     </script>
-    <script src="validar.js"></script>
 </body>
 </html>
